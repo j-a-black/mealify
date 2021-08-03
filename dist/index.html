@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="./js/script.js" type="module"></script>
+    <title>Mealify-ish</title>
+  </head>
+  <body>
+    <header></header>
+    <div class="container">
+      <section>
+        <h1>Find Meals Based On A Single Ingredient</h1>
+        <form class="form">
+          <input
+            type="text"
+            class="input-field"
+            id="input-field"
+            maxlength="100"
+            placeholder="Enter an ingredient"
+            autofocus
+          />
+          <button class="search-btn-js" type="submit">
+            <i class="fas fa-search fa-lg"></i>
+          </button>
+        </form>
+      </section>
+      <section>
+        <p class="totalItemCount"></p>
+        <div class="search-results-grid">
+          <!-- <div class="result-item">
+            <div>
+              <img
+                src="https://source.unsplash.com/E94j3rMcxlw/640x426"
+                alt=""
+              />
+            </div>
+            <div class="result-body">
+              <h3>Shrip Chow Fun</h3>
+              <button class="open-modal-js">Get Recipe</button>
+            </div>
+          </div> -->
+        </div>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <br />
+          <h1>Ingredients:</h1>
+          <div class="recipe-ingredient-js"></div>
+          <div class="recipe-content">
+            <!-- <h1>meal name</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+              atque voluptatem tempora veritatis tenetur quia reiciendis
+              deserunt commodi quisquam perspiciatis. Amet neque voluptas nemo
+              vitae non perferendis quam quia ut.
+            </p> -->
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+      </section>
+    </div>
+  </body>
+</html>
