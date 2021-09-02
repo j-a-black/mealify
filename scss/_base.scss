@@ -14,6 +14,11 @@ body {
   min-height: 100vh;
   background-color: #eee;
   font-family: $poppins;
+  background-image: url("https://source.unsplash.com/NkQD-RHhbvY/2400x3600");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
