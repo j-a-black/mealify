@@ -72,12 +72,16 @@ export const getRecipe = async (e) => {
     let html = "";
     let ingredHtml = "";
     html = `
-        <h1>${meal.strMeal}</h1>
+        <h2>${meal.strMeal}</h2>
         <p>${meal.strInstructions}</p>
-        <a href="${meal.strYoutube}" target="_blank">See how on Youtube</a>
+        <a class="video-link" href="${meal.strYoutube}" target="_blank">See How on Youtube</a>
         `;
     const recipeContentDiv = modal.querySelector(".recipe-content");
     recipeContentDiv.innerHTML = html;
+
+    const bannerImg = modal.querySelector(".banner-img");
+    bannerImg.style.backgroundImage = `url("${meal.strMealThumb}")`;
+    console.log("background image url: " + meal.strMealThumb);
 
     // dynamically inject a list of ingredients and measurement/quantity for each ingredient
     const recipeIngredient = modal.querySelector(".recipe-ingredient-js");

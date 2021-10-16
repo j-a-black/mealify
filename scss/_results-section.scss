@@ -21,10 +21,8 @@
     background-color: white;
 
     .result-item {
-      // border: 2px solid red;
       display: flex;
-      flex-flow: column;
-      text-align: center;
+      flex-direction: column;
       box-shadow: 5px 5px 10px #ccc;
       cursor: pointer;
       transition: transform 200ms ease-in;
@@ -54,10 +52,18 @@
         display: flex;
         flex-flow: column;
         justify-content: space-around;
+        align-items: flex-start;
         background-color: white;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
 
         h3 {
+          width: 100%;
           font-weight: 400;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
         }
 
         button {
