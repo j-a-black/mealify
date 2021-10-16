@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       referrerpolicy="no-referrer"
     />
@@ -24,7 +31,7 @@
             class="input-field"
             id="input-field"
             maxlength="100"
-            placeholder="Enter an ingredient"
+            placeholder="try 'egg' or 'chicken breast'"
             autofocus
           />
           <button class="search-btn-js" type="submit">
@@ -32,8 +39,9 @@
           </button>
         </form>
       </section>
-      <section>
+      <section id="search-list">
         <p class="totalItemCount"></p>
+        <div id="loading"><i class="fas fa-sync-alt fa-spin fa-2x"></i></div>
         <div class="search-results-grid">
           <!-- <div class="result-item">
             <div>
@@ -64,6 +72,8 @@
           </div>
         </div>
         <div class="overlay hidden"></div>
+
+        <a id="bottom-bar" href="#search-list">Back To Top</a>
       </section>
     </div>
   </body>

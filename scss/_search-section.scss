@@ -1,12 +1,12 @@
 h1 {
-  color: royalblue;
+  color: black;
 }
 
 .form {
   display: flex;
   align-items: center;
-  border: 2px solid #bbb;
-  border-radius: 50px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
   padding: 0 10px;
   width: 100%;
   max-width: 425px;
@@ -30,6 +30,7 @@ h1 {
 
 @media screen and (min-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 200;
   }
 }

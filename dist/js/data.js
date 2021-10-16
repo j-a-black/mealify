@@ -13,10 +13,15 @@ export const getMealResults = () => {
 const fetchFromApi = async (inputValue) => {
   console.log(`Input Value is: ${inputValue}`);
 
+  const loader = document.querySelector("#loading");
+  loader.classList.add("display");
+
   const url = `https://www.themealdb.com/api/json/v1/1/filter.php?i=${inputValue}`;
   const response = await fetch(url);
   const jsonListData = await response.json();
   const mealData = jsonListData.meals;
+
+  if (jsonListData) loader.classList.remove("display");
 
   displayMealResults(mealData);
 };
